@@ -1,11 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../styles/Home.module.scss'
-
+import Card from '../components/Card/Card'
 
 const Home: NextPage = () => {
+  
   return (
     <div>
       <Head>
@@ -14,11 +12,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className={styles.h1}>
-        Hello World!
-        <Image src="/vercel.svg" height='64' width='83' alt='img' />
-        <Link href='https://www.google.com/'> Google </Link>
-      </h1>
+     <div>
+     <Card color='Orange' smallMargin>
+        This is Orange
+      </Card>
+
+      <Card color="Primary" smallMargin>
+        This is Primary
+      </Card>
+     </div>
+
     </div>
   )
 }

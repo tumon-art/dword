@@ -1,0 +1,30 @@
+.base {
+    font-size: large;
+    border: 4px solid ;
+    font-weight: 900;
+    font-family: monospace;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 3px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__Primary {
+        background-color: blueviolet;
+        color: white;
+        border-color: rgb(31, 2, 58);
+    }
+
+    &__Orange {
+        background-color: rgb(196, 115, 17);
+        border-color: goldenrod;
+        color: white;
+    }
+
+    &__SmallMargin {
+        margin: 5px;
+    }
+}
