@@ -6,19 +6,11 @@ import Card from '../components/Card/Card'
 
 import styles from '../styles/Home.module.scss'
 
-import translate from 'google-translate-open-api';
-(async function(){
-  const result:any = await translate(`I'm fine.`, {
-    tld: "cn",
-    to: "zh-CN",
-  });
-  const data = result.data[0];
-  console.log(result)
-})()
-
-// 我很好。
 const Home: NextPage = () => {
-
+  
+  (async function(){
+    console.log('function')
+  })()
   return (
     <div>
       <Head>
